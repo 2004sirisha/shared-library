@@ -4,11 +4,11 @@ def call(String branch_name, String project_name, String base_url) {
 
         stages {
             stage('Hello') {
-                steps {
-                    script {
+                steps{
+                        sh """
                         echo 'Hello World'
                         echo "${base_url}/${project_name}/${branch_name}" // Corrected string interpolation synt
-                }
+                        """
             }
             }
             stage('build') {
