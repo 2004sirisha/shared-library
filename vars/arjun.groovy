@@ -1,5 +1,5 @@
 def call (Map params) {
- def branch_name = params.branch_name
+def branch_name = params.branch_name
 def project_name = params.project_name
 def base_url = params.base_url
  pipeline {
