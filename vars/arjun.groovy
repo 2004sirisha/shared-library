@@ -8,12 +8,11 @@ def call () {
                   echo 'Hello World'
             }
         }
-    }
-    stages {
-          stage('build') {
+
+       stage('build') {
               steps {
                   echo 'test arjun build'
-            }
+      
         }
     }
 }
