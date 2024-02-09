@@ -9,6 +9,13 @@ def call () {
             }
         }
     }
+    stages {
+          stage('build') {
+              steps {
+                  echo 'test arjun build'
+            }
+        }
+    }
 }
 
 }
