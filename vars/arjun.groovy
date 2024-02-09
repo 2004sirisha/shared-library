@@ -6,7 +6,7 @@ def call (String branch_name) {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                 echo '${branch_name}'
+                 echo "${branch_name}"
             }
         }
         stage('build') {
