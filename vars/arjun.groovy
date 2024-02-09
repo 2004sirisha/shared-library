@@ -9,7 +9,7 @@ def base_url = params.base_url
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                echo "${base_url}/${project_name}"
+                echo base_url/project_name
             }
         }
         stage('build') {
