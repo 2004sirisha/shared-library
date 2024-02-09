@@ -1,4 +1,4 @@
-def call(branch_name,branch_name,base_url) { 
+def call(String branch_name, String project_name, String base_url) {
     pipeline {
         agent any
 
@@ -6,10 +6,10 @@ def call(branch_name,branch_name,base_url) {
             stage('Hello') {
                 steps {
                     script {
-                    echo 'Hello World'
-                    echo "${base_url}/${project_name}" // Corrected string interpolation syntax
+                        echo 'Hello World'
+                        echo "${base_url}/${project_name}" // Corrected string interpolation syntax
+                    }
                 }
-            }
             }
             stage('build') {
                 steps {
