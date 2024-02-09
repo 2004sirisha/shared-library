@@ -1,4 +1,4 @@
-def call (string branch_name) {
+def call (String branch_name) {
  pipeline {
     agent any
 
